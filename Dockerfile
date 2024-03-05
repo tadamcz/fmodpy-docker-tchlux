@@ -7,7 +7,6 @@ RUN apt-get update && apt-get install -y \
     liblapack-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Install any needed packages specified in requirements.txt
 RUN pip install numpy fmodpy
 
 # Set the working directory in the container
